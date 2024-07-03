@@ -1,0 +1,81 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 5%;
+  color: white;
+  background-color: #232222;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+
+  box-sizing: border-box;
+}
+
+.name {
+  width: max(12vw, 120px);
+}
+
+.navbar ul {
+  display: flex;
+  flex: 1;
+  justify-content: flex-end;
+  list-style: none;
+  padding-right: 20px;
+}
+
+.navbar li {
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+.nav-right {
+  display: flex;
+  gap: 12px;
+  margin-left: auto;
+  border: none;
+}
+
+.navbar select {
+  padding: 8px 12px;
+  margin-right: 5px;
+  border-radius: 6px;
+  border: none;
+  background: #8ad9a3;
+  color: black;
+}
+.navbar select option :hover {
+  background: #f0f0f0; /* Option background */
+  color: black; /* Option text color */
+}
+
+.navbar option {
+  background-color: #232222;
+  color: white;
+  border: none;
+}
+
+@media (max-width: 900px) {
+  .navbar {
+    padding: 20px 8%;
+  }
+
+  .name {
+    width: 120px;
+  }
+
+  .navbar button {
+    padding: 8px 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    padding: 20px 5%;
+  }
+
+  .navbar ul {
+    display: none;
+  }
+  .nav-right {
+    gap: 8px;
+  }
+}
